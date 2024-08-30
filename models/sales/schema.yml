@@ -1,0 +1,40 @@
+version: 2
+
+models:
+  - name: fct_sales
+    description: "Вітрина даних про продажі компанії."
+    columns:
+      - name: Product_Name
+        description: "Назва проданого продукту."
+      - name: sales_agents
+        description: "Список імен продавців, які були залучені в цій продажі."
+      - name: Country
+        description: "Країна покупця."
+      - name: campaigns
+        description: "Назва кампанії."
+      - name: sources
+        description: "Джерело продажі"
+      - name: total_revenue
+        description: "Дохід компанії від продажі, враховуючи повторні оплати (rebill) та повернення коштів."
+      - name: rebill_revenue
+        description: "Дохід компанії тільки від ребілів."
+      - name: number_of_rebills
+        description: "Кількість ребілів."
+      - name: discount_amount
+        description: "Сума знижки."
+      - name: returned_amount
+        description: "Сума повернених коштів."
+      - name: return_date_kyiv
+        description: "Дата повернення коштів (час по Києву)."
+      - name: return_date_utc
+        description: "Дата повернення коштів (UTC)."
+      - name: return_date_ny
+        description: "Дата повернення коштів (New York)."
+      - name: order_date_kyiv
+        description: "Дата продажу (час по Києву)."
+      - name: order_date_utc
+        description: "Дата продажу (UTC)."
+      - name: order_date_ny
+        description: "Дата продажу (New York)."
+      - name: days_between_return_and_purchase
+description: "Різниця днів від дати повернення коштів та дати покупки."

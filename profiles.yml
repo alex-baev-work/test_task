@@ -1,0 +1,12 @@
+test_task:
+  outputs:
+    dev:
+      dbname: test_task_xmpc
+      host: dpg-cr78643v2p9s73e9n6h0-a.frankfurt-postgres.render.com
+      pass: wdQ8K67g9clfAnLxgm5CYAEVTe8fIG6m
+      port: 5432
+      schema: public
+      threads: 1
+      type: postgres
+      user: admin
+  target: dev
